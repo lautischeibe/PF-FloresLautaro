@@ -112,6 +112,15 @@ main .galeria {
   display: flex;
   position: relative;
 }
+main .galeria .sesgoarriba {
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-width: 35vh 100vw 0 0;
+  border-style: solid;
+  border-color: #fff transparent transparent transparent;
+}
 main .galeria .imagenes {
   width: 20%;
   height: 500px;
@@ -123,20 +132,98 @@ main .galeria img {
   height: 100%;
   object-fit: cover;
 }
-main .cards {
+main .miembros .contenedor {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  overflow: hidden;
+  padding: 52px 0;
+}
+main .miembros .sobre-nosotros {
+  text-align: center;
+  font-size: 56px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  height: auto;
+}
+main .miembros .slogan {
+  font-size: 24px;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 24px;
+}
+main .miembros .parrafo {
+  margin-bottom: 13px;
+  font-weight: 300;
+  text-align: justify;
+  line-height: 24px;
+  color: crimson;
+}
+main .miembros .cards {
   width: 100%;
   margin: auto;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
 }
-main .cards .card {
+main .miembros .cards .card {
   margin: 20px 0;
   width: 30%;
   height: 250px;
   text-align: center;
   padding: 20px;
   box-shadow: 0px 0px 4px 0px crimson;
+}
+main .miembros .cards .card img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 100%;
+}
+main .fondo {
+  height: 900px;
+  position: relative;
+  background-image: url();
+  overflow: hidden;
+  background-attachment: fixed;
+  background-position: center;
+  padding-top: 130px;
+}
+main .fondo .contenedor {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  overflow: hidden;
+  padding: 52px 0;
+}
+main .fondo .titulo-patrocinadores {
+  text-align: center;
+  font-size: 56px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  height: auto;
+}
+main .fondo .subtitulo-patrocinadores {
+  font-size: 24px;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 24px;
+}
+main .fondo .parrafo {
+  margin-bottom: 13px;
+  font-weight: 300;
+  text-align: justify;
+  line-height: 24px;
+  color: crimson;
+}
+main .sesgoabajo-unico {
+  z-index: 10;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-width: 0 0 35vh 100vw;
+  border-style: solid;
+  border-color: transparent transparent crimson transparent;
 }
 
 /*# sourceMappingURL=style.css.map */
