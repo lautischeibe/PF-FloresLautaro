@@ -11,6 +11,9 @@
 body {
   font-family: Billie;
   font-size: 16px;
+  background-color: gold;
+  background-position: center;
+  background-size: cover;
 }
 
 header {
@@ -57,6 +60,9 @@ header .sesgoabajo {
   border-color: transparent transparent #fff transparent;
 }
 
+main .acerca-de {
+  background-color: #fff;
+}
 main .acerca-de .contenedor {
   width: 90%;
   max-width: 1000px;
@@ -132,6 +138,9 @@ main .galeria img {
   height: 100%;
   object-fit: cover;
 }
+main .miembros {
+  background-color: #fff;
+}
 main .miembros .contenedor {
   width: 90%;
   max-width: 1000px;
@@ -183,7 +192,7 @@ main .miembros .cards .card img {
 main .fondo {
   height: 900px;
   position: relative;
-  background-image: url();
+  background-color: gray;
   overflow: hidden;
   background-attachment: fixed;
   background-position: center;
@@ -197,11 +206,12 @@ main .fondo .contenedor {
   padding: 52px 0;
 }
 main .fondo .titulo-patrocinadores {
+  color: white;
   text-align: center;
   font-size: 56px;
-  margin-bottom: 10px;
   font-weight: 600;
   height: auto;
+  margin-top: 48px;
 }
 main .fondo .subtitulo-patrocinadores {
   font-size: 24px;
@@ -209,12 +219,12 @@ main .fondo .subtitulo-patrocinadores {
   text-align: center;
   margin-bottom: 24px;
 }
-main .fondo .parrafo {
-  margin-bottom: 13px;
-  font-weight: 300;
-  text-align: justify;
-  line-height: 24px;
-  color: crimson;
+main .fondo .clientes {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-bottom: 64px;
+  width: 100%;
+  justify-content: space-between;
 }
 main .sesgoabajo-unico {
   z-index: 10;
@@ -223,7 +233,10 @@ main .sesgoabajo-unico {
   left: 0;
   border-width: 0 0 35vh 100vw;
   border-style: solid;
-  border-color: transparent transparent crimson transparent;
+  border-color: transparent transparent gold transparent;
+}
+main footer {
+  background-color: pink;
 }
 
 /*# sourceMappingURL=style.css.map */

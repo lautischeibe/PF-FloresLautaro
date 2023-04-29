@@ -12,6 +12,10 @@
 body {
     font-family: Billie;
     font-size: 16px;
+    // background-image: url(../img/011.jpg);
+    background-color: gold;
+    background-position: center;
+    background-size: cover;
 }
 
 header {
@@ -65,6 +69,7 @@ header {
 
 main {
     .acerca-de {
+        background-color: #fff;
         .contenedor {
             width: 90%;
             max-width: 1000px;
@@ -154,6 +159,7 @@ main {
     }
 
     .miembros {
+        background-color: #fff;
         .contenedor {
             width: 90%;
             max-width: 1000px;
@@ -211,7 +217,8 @@ main {
     .fondo {
         height: 900px;
         position: relative;
-        background-image: url();
+        background-color: gray;
+        // background-image: url();
         overflow: hidden;
         background-attachment: fixed;
         background-position: center;
@@ -226,11 +233,12 @@ main {
         }
 
         .titulo-patrocinadores{
+            color: white;
             text-align: center;
             font-size: 56px;
-            margin-bottom: 10px;
             font-weight: 600;
             height: auto;
+            margin-top: 48px;
         }
 
         .subtitulo-patrocinadores {
@@ -240,12 +248,12 @@ main {
             margin-bottom: 24px;
         }
 
-        .parrafo {
-            margin-bottom: 13px;
-            font-weight: 300;
-            text-align: justify;
-            line-height: 24px;
-            color: crimson;
+        .clientes {
+            display: flex;
+            flex-wrap: nowrap;
+            margin-bottom: 64px;
+            width: 100%;
+            justify-content: space-between;
         }
     }
 
@@ -256,6 +264,11 @@ main {
         left: 0;
         border-width: 0 0 35vh 100vw;
         border-style: solid;
-        border-color: transparent transparent crimson transparent;
+        border-color: transparent transparent gold transparent;
+    }
+
+    footer {
+        background-color: pink;
+
     }
 }
