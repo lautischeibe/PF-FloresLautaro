@@ -70,6 +70,7 @@ header {
 main {
     .acerca-de {
         background-color: #fff;
+
         .contenedor {
             width: 90%;
             max-width: 1000px;
@@ -160,6 +161,7 @@ main {
 
     .miembros {
         background-color: #fff;
+
         .contenedor {
             width: 90%;
             max-width: 1000px;
@@ -190,6 +192,7 @@ main {
             line-height: 24px;
             color: crimson;
         }
+
         .cards {
             width: 100%;
             margin: auto;
@@ -214,6 +217,7 @@ main {
             }
         }
     }
+
     .fondo {
         height: 900px;
         position: relative;
@@ -232,8 +236,7 @@ main {
             padding: 52px 0;
         }
 
-        .titulo-patrocinadores{
-            color: white;
+        .titulo-patrocinadores {
             text-align: center;
             font-size: 56px;
             font-weight: 600;
@@ -250,7 +253,7 @@ main {
 
         .clientes {
             display: flex;
-            flex-wrap: nowrap;
+            flex-wrap: wrap;
             margin-bottom: 64px;
             width: 100%;
             justify-content: space-between;
@@ -266,9 +269,60 @@ main {
         border-style: solid;
         border-color: transparent transparent gold transparent;
     }
+}
 
-    footer {
-        background-color: pink;
+footer {
+    .contenedor {
+        .titulo-footer {
+            text-align: center;
+            font-size: 56px;
+            padding: 20px 20px 40px 20px;
+        }
 
+        .footer {
+            form {
+                display: flex;
+                width: 100%;
+                justify-content: space-around;
+                flex-wrap: wrap;
+                margin: auto;
+
+                input {
+                    display: inline-block;
+                    width: 45%;
+                    padding: 13px;
+                    border: none;
+                    color: white;
+                    background: grey;
+                    margin-bottom: 16px;
+                    border-top: 1px solid grey;
+                    &:focus {
+                        border-top: 1px solid grey;
+                    }
+                }
+
+                textarea {
+                    display: block;
+                    width: 100%;
+                    max-width: 95%;
+                    min-width: 95%;
+                    max-height: 200px;
+                    min-height: 200px;
+                    background: grey;
+                    padding: 13px;
+                    border: none;
+                    margin-bottom: 16px;
+                    &:focus {
+                        border-top: 1px solid grey;
+                    }
+                }
+                .submit {
+                    display: inline-block;
+                    padding: 13px;
+                    border: none;
+                    color: white;
+                }
+            }
+        }
     }
 }

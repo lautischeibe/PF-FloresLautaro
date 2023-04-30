@@ -206,7 +206,6 @@ main .fondo .contenedor {
   padding: 52px 0;
 }
 main .fondo .titulo-patrocinadores {
-  color: white;
   text-align: center;
   font-size: 56px;
   font-weight: 600;
@@ -221,7 +220,7 @@ main .fondo .subtitulo-patrocinadores {
 }
 main .fondo .clientes {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   margin-bottom: 64px;
   width: 100%;
   justify-content: space-between;
@@ -235,8 +234,52 @@ main .sesgoabajo-unico {
   border-style: solid;
   border-color: transparent transparent gold transparent;
 }
-main footer {
-  background-color: pink;
+
+footer .contenedor .titulo-footer {
+  text-align: center;
+  font-size: 56px;
+  padding: 20px 20px 40px 20px;
+}
+footer .contenedor .footer form {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: auto;
+}
+footer .contenedor .footer form input {
+  display: inline-block;
+  width: 45%;
+  padding: 13px;
+  border: none;
+  color: white;
+  background: grey;
+  margin-bottom: 16px;
+  border-top: 1px solid grey;
+}
+footer .contenedor .footer form input:focus {
+  border-top: 1px solid grey;
+}
+footer .contenedor .footer form textarea {
+  display: block;
+  width: 100%;
+  max-width: 95%;
+  min-width: 95%;
+  max-height: 200px;
+  min-height: 200px;
+  background: grey;
+  padding: 13px;
+  border: none;
+  margin-bottom: 16px;
+}
+footer .contenedor .footer form textarea:focus {
+  border-top: 1px solid grey;
+}
+footer .contenedor .footer form .submit {
+  display: inline-block;
+  padding: 13px;
+  border: none;
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */
