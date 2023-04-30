@@ -12,10 +12,11 @@
 body {
     font-family: Billie;
     font-size: 16px;
-    // background-image: url(../img/011.jpg);
-    background-color: gold;
+    // background-color: rgba(255, 0, 0, 0.86);
+    background-image: url(../img/skewed.png);
     background-position: center;
     background-size: cover;
+    background-position-y: 1400px;
 }
 
 header {
@@ -99,7 +100,7 @@ main {
             font-weight: 300;
             text-align: justify;
             line-height: 24px;
-            color: crimson;
+            color: black;
         }
 
         .boton {
@@ -221,7 +222,7 @@ main {
     .fondo {
         height: 900px;
         position: relative;
-        background-color: gray;
+        // background-color: gray;
         // background-image: url();
         overflow: hidden;
         background-attachment: fixed;
@@ -242,6 +243,7 @@ main {
             font-weight: 600;
             height: auto;
             margin-top: 48px;
+            text-shadow: white 0 -1px;
         }
 
         .subtitulo-patrocinadores {
@@ -249,6 +251,7 @@ main {
             font-weight: 300;
             text-align: center;
             margin-bottom: 24px;
+            text-shadow: white 0 -1px;
         }
 
         .clientes {
@@ -257,6 +260,7 @@ main {
             margin-bottom: 64px;
             width: 100%;
             justify-content: space-between;
+            border-color: 1px solid white;
         }
     }
 
@@ -267,16 +271,17 @@ main {
         left: 0;
         border-width: 0 0 35vh 100vw;
         border-style: solid;
-        border-color: transparent transparent gold transparent;
+        border-color: transparent transparent white transparent;
     }
 }
 
 footer {
     .contenedor {
+        background-color: white;
         .titulo-footer {
             text-align: center;
             font-size: 56px;
-            padding: 20px 20px 40px 20px;
+            padding: 40px 20px 40px 20px;
         }
 
         .footer {
@@ -292,10 +297,11 @@ footer {
                     width: 45%;
                     padding: 13px;
                     border: none;
-                    color: white;
+                    color: grey;
                     background: grey;
                     margin-bottom: 16px;
                     border-top: 1px solid grey;
+
                     &:focus {
                         border-top: 1px solid grey;
                     }
@@ -312,10 +318,12 @@ footer {
                     padding: 13px;
                     border: none;
                     margin-bottom: 16px;
+
                     &:focus {
                         border-top: 1px solid grey;
                     }
                 }
+
                 .submit {
                     display: inline-block;
                     padding: 13px;
@@ -325,4 +333,97 @@ footer {
             }
         }
     }
+    .socialmedia {
+        color: black;
+        background-color: white;
+        font-size: 30px;
+        padding: 20px;
+        letter-spacing: 20px;
+        text-align: center;
+        & i:hover {
+            color: fuchsia
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    main {
+        .miembros {
+            .cards {
+                .card {
+                    width: 48%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 620px) {
+    header {
+        .textos {
+            margin-top: 130px;
+        }
+    }
+
+    main {
+        .miembros {
+            .cards {
+                .card {
+                    width: 90%;
+                }
+            }
+        }
+    }
+
+    .titulo {
+        font-size: 75px;
+    }
+
+    .none {
+        display: none;
+    }
+
+    .imagenes {
+        flex-grow: 1;
+    }
+
+    .fondo {
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    header {
+        .textos {
+            margin-top: 130px;
+        }
+
+        .titulo {
+            font-size: 65px;
+        }
+
+        .subtitulo {
+            font-size: 25px;
+            margin-bottom: 32px;
+        }
+    }
+
+    main{
+        .acerca-de {
+            .sobre-nosotros{
+                font-size: 46px;
+            }
+            .slogan {
+                font-size: 20px;
+            }
+        } 
+        .fondo{
+            .titulo-patrocinadores {
+                font-size: 46px;
+            }
+            .subtitulo-patrocinadores{
+                font-size: 20px;
+            }
+        }
+    } 
 }

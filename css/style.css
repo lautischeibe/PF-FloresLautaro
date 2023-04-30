@@ -11,9 +11,10 @@
 body {
   font-family: Billie;
   font-size: 16px;
-  background-color: gold;
+  background-image: url(../img/skewed.png);
   background-position: center;
   background-size: cover;
+  background-position-y: 1400px;
 }
 
 header {
@@ -88,7 +89,7 @@ main .acerca-de .parrafo {
   font-weight: 300;
   text-align: justify;
   line-height: 24px;
-  color: crimson;
+  color: black;
 }
 main .acerca-de .boton {
   display: inline-block;
@@ -192,7 +193,6 @@ main .miembros .cards .card img {
 main .fondo {
   height: 900px;
   position: relative;
-  background-color: gray;
   overflow: hidden;
   background-attachment: fixed;
   background-position: center;
@@ -211,12 +211,14 @@ main .fondo .titulo-patrocinadores {
   font-weight: 600;
   height: auto;
   margin-top: 48px;
+  text-shadow: white 0 -1px;
 }
 main .fondo .subtitulo-patrocinadores {
   font-size: 24px;
   font-weight: 300;
   text-align: center;
   margin-bottom: 24px;
+  text-shadow: white 0 -1px;
 }
 main .fondo .clientes {
   display: flex;
@@ -224,6 +226,7 @@ main .fondo .clientes {
   margin-bottom: 64px;
   width: 100%;
   justify-content: space-between;
+  border-color: 1px solid white;
 }
 main .sesgoabajo-unico {
   z-index: 10;
@@ -232,13 +235,16 @@ main .sesgoabajo-unico {
   left: 0;
   border-width: 0 0 35vh 100vw;
   border-style: solid;
-  border-color: transparent transparent gold transparent;
+  border-color: transparent transparent white transparent;
 }
 
+footer .contenedor {
+  background-color: white;
+}
 footer .contenedor .titulo-footer {
   text-align: center;
   font-size: 56px;
-  padding: 20px 20px 40px 20px;
+  padding: 40px 20px 40px 20px;
 }
 footer .contenedor .footer form {
   display: flex;
@@ -252,7 +258,7 @@ footer .contenedor .footer form input {
   width: 45%;
   padding: 13px;
   border: none;
-  color: white;
+  color: grey;
   background: grey;
   margin-bottom: 16px;
   border-top: 1px solid grey;
@@ -280,6 +286,67 @@ footer .contenedor .footer form .submit {
   padding: 13px;
   border: none;
   color: white;
+}
+footer .socialmedia {
+  color: black;
+  background-color: white;
+  font-size: 30px;
+  padding: 20px;
+  letter-spacing: 20px;
+  text-align: center;
+}
+footer .socialmedia i:hover {
+  color: fuchsia;
+}
+
+@media screen and (max-width: 900px) {
+  main .miembros .cards .card {
+    width: 48%;
+  }
+}
+@media screen and (max-width: 620px) {
+  header .textos {
+    margin-top: 130px;
+  }
+  main .miembros .cards .card {
+    width: 90%;
+  }
+  .titulo {
+    font-size: 75px;
+  }
+  .none {
+    display: none;
+  }
+  .imagenes {
+    flex-grow: 1;
+  }
+  .fondo {
+    height: auto;
+  }
+}
+@media screen and (max-width: 380px) {
+  header .textos {
+    margin-top: 130px;
+  }
+  header .titulo {
+    font-size: 65px;
+  }
+  header .subtitulo {
+    font-size: 25px;
+    margin-bottom: 32px;
+  }
+  main .acerca-de .sobre-nosotros {
+    font-size: 46px;
+  }
+  main .acerca-de .slogan {
+    font-size: 20px;
+  }
+  main .fondo .titulo-patrocinadores {
+    font-size: 46px;
+  }
+  main .fondo .subtitulo-patrocinadores {
+    font-size: 20px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
