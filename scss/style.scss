@@ -2,6 +2,10 @@
     font-family: Billie;
     src: url(../fonts/Plain\ Germanica.ttf);
 }
+@font-face {
+    font-family: Gaga;
+    src: url(/fonts/LICENSE\ PLATE\ USA.ttf);
+}
 
 * {
     margin: 0;
@@ -278,6 +282,7 @@ main {
 footer {
     .contenedor {
         background-color: white;
+
         .titulo-footer {
             text-align: center;
             font-size: 56px;
@@ -333,6 +338,7 @@ footer {
             }
         }
     }
+
     .socialmedia {
         color: black;
         background-color: white;
@@ -340,6 +346,7 @@ footer {
         padding: 20px 20px 20px 20px;
         letter-spacing: 20px;
         text-align: center;
+
         & i:hover {
             color: fuchsia
         }
@@ -408,22 +415,25 @@ footer {
         }
     }
 
-    main{
+    main {
         .acerca-de {
-            .sobre-nosotros{
+            .sobre-nosotros {
                 font-size: 46px;
             }
+
             .slogan {
                 font-size: 20px;
             }
-        } 
-        .fondo{
+        }
+
+        .fondo {
             .titulo-patrocinadores {
                 font-size: 46px;
             }
-            .subtitulo-patrocinadores{
+
+            .subtitulo-patrocinadores {
                 font-size: 20px;
             }
         }
-    } 
+    }
 }
